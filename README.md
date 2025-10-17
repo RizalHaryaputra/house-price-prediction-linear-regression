@@ -41,9 +41,7 @@ Model dilatih menggunakan dataset harga rumah dari Kaggle dan dapat memperkiraka
 
 Model disimpan dalam folder `models` dengan nama:
 ```
-
 model_prediksi_harga_rumah.pkl
-
 ````
 
 ---
@@ -106,10 +104,3 @@ Project ini dibuat sebagai tugas **Praktikum Aplikasi Web** oleh:
 NIM: 23051130013
 Topik: *Prediksi Harga Rumah dengan Linear Regression*
 
----
-
-## 📜 Lisensi
-
-Proyek ini bersifat open-source dan dapat digunakan untuk keperluan pembelajaran.
-
-```
