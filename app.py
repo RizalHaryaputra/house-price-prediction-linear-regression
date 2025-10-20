@@ -69,20 +69,20 @@ with col2:
         help="Jumlah kamar mandi/toilet."
     )
 
-    # 5. Garasi (GRS) - Ini harus di-encode menjadi angka (0 atau 1)
-    grs_option = st.selectbox(
-        '5. Ketersediaan Garasi (GRS)', 
-        ('ADA', 'TIDAK ADA'),
-        help="Pilih ketersediaan garasi. Model Anda mungkin menggunakan 1/0."
+    # 5. Jumlah Garasi (GRS)
+    grs_input = st.slider(
+        '5. Jumlah Garasi (GRS)', 
+        min_value=0, 
+        max_value=5, 
+        value=1,
+        help="Jumlah garasi yang tersedia."
     )
-    # Asumsi: Model Anda menggunakan 1 untuk 'ADA' dan 0 untuk 'TIDAK ADA'
-    grs_encoded = 1 if grs_option == 'ADA' else 0
 
 # 3. Tombol Prediksi
 if st.button('Hitung Prediksi Harga'):
 
     # 4. Susun Input data sesuai urutan pelatihan model (LB, LT, KT, KM, GRS)
-    data_input = np.array([[lb_input, lt_input, kt_input, km_input, grs_encoded]])
+    data_input = np.array([[lb_input, lt_input, kt_input, km_input, grs_input]])
 
     # 5. Lakukan Prediksi
     # Gunakan try-except untuk menangani potential error jika model.predict gagal
