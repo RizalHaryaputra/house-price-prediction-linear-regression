@@ -51,7 +51,8 @@ model_prediksi_harga_rumah.pkl
 1. **Clone Repository**
    ```bash
    git clone https://github.com/RizalHaryaputra/prediksi-harga-rumah-streamlit.git
-   cd prediksi-harga-rumah-streamlit```
+   cd prediksi-harga-rumah-streamlit
+   ```
 
 2. **Buat Virtual Environment (Opsional)**
 
@@ -81,12 +82,6 @@ model_prediksi_harga_rumah.pkl
 * joblib
 * numpy
 * scikit-learn
-
-Kamu dapat membuat file `requirements.txt` dengan perintah:
-
-```bash
-pip freeze > requirements.txt
-```
 
 ---
 
